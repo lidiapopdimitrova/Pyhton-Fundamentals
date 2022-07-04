@@ -1,0 +1,29 @@
+money = float(input())
+sum_of_money = int(money * 100)
+coins_counter = 0
+while sum_of_money > 0:
+    if sum_of_money - 200 >= 0:
+        coins_counter += 1
+        sum_of_money -= 200
+    elif sum_of_money - 100 >= 0:
+        coins_counter += 1
+        sum_of_money -= 100
+    elif sum_of_money - 50 >= 0:
+        coins_counter += 1
+        sum_of_money -= 50
+    elif sum_of_money - 20 >= 0:
+        coins_counter += 1
+        sum_of_money -= 20
+    elif sum_of_money - 10 >= 0:
+        coins_counter += 1
+        sum_of_money -= 10
+    elif sum_of_money - 5 >= 0:
+        coins_counter += 1
+        sum_of_money -= 5
+    elif sum_of_money - 2 >= 0:
+        coins_counter += 1
+        sum_of_money -= 2
+    elif sum_of_money - 1 >= 0:
+        coins_counter += 1
+        sum_of_money -= 1
+print(coins_counter)
